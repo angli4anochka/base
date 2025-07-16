@@ -3,9 +3,9 @@ const express = require('express');
 const axios = require('axios');
 const app = express();
 
-const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
-const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID;
-const TABLE_NAME = process.env.TABLE_NAME || 'Table 2';
+const AIRTABLE_API_KEY = "pat0R5ynXb9WP06Xx";
+const AIRTABLE_BASE_ID = "appMZ0s6RcKzcVYQa";
+const TABLE_NAME = process.env.TABLE_NAME || 'Status';
 
 app.get('/webhook/track-open', async (req, res) => {
   const email = req.query.id;
